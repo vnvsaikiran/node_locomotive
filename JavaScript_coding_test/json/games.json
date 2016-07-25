@@ -1,0 +1,9 @@
+{
+	"games": [
+		{"url": "json/game-1.json"},
+		{"url": "json/game-2.json"},
+		{"url": "json/game-3.json"},
+		{"url": "json/game-4.json"},
+		{"url": "json/game-5.json"}
+	]
+}
