@@ -1,0 +1,118 @@
+body {font-family: "Lato", sans-serif; margin:0px; }
+.container{
+	width:100%; 
+	
+	
+}
+.header{
+	background:#3795bb;
+	width:100%;
+	min-height:80px;
+	color:#FFF;
+	padding:5px 0;
+}
+.header h2{
+	color:#FFF;
+	font-size:40px;
+	margin:0px;
+	padding:0px 25px;
+	line-height:50px;
+}
+.bodyContent{
+	width:80%; margin:auto;
+	padding-top:40px;
+}
+form ul { margin:0px; padding:0px;}
+form ul li{ list-style:none; float:left; padding-right:10px; }
+form  legend{ font-weight:bold; font-size:13px;}
+.btn {
+background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+	float:left;
+	width:98%;
+}
+.resultsHeader, .results{ margin:0px; padding:0px; width:100%; float:left; }
+.resultsHeader li, .results li{ list-style:none; float:left; padding:10px 0px; }
+.resultsHeader li {	
+	background: #3795bb;
+    font-weight: bold;
+    color: #FFF;
+    padding: 6px 20px;
+    width: 20%;
+    border-left: 1px solid #FFF;
+    font-size: 13px;
+}
+
+.results li {	
+	
+    
+    color: #333;
+    padding: 6px 20px;
+    width: 20%;
+    border-bottom: 1px solid #ccc;
+    font-size: 13px;
+	min-height:50px;
+}
+.tabcontent .panelHeader{ padding:20px 0; display:block; }
+.panelHeader strong { font-weight:bold;}
+
+
+
+
+

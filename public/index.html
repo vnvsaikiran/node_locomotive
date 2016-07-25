@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Form</title>
+  <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h2>Flight Search</h3>
+</div>
+<div class="bodyContent">
+  <form >
+    <legend>Search Flights</legend><br/>
+	<ul>
+	<li><input name="fromLocation" id="fromLocation" placeholder="From Location"></li>
+    <li><input name="toLocation" id="toLocation" placeholder="To Location"></li>
+    <li><input name="dateofTravel" id="dateTravel" placeholder="Travelling Date"></li>
+	<li><input type="button" value="Search" class="btn"  id="filightSearch" ></li>
+	</ul>
+    
+  </form><br><br>
+	<div id="resultsContainer">
+	</div>
+</div>
+</div>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script src="js/vendor/loadash.js"></script>  
+  <script src="js/vendor/moment.min.js"></script>
+  <script src="js/client.js"></script>
+  
+</body>
+</html>

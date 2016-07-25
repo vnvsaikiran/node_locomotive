@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Form</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+ Results
+  <br>
+{{#fdetails}}
+Day -2
+{{#dayminustwo}}<br/>
+{{airline.name}} - {{flightNum}}<br/>
+{{#start}}
+{{countryName}} - {{dateTime}}<br/>
+{{/start}}
+{{/dayminustwo}}
+------------<br/><br/><br/>
+Day -1
+{{#dayminusone}}
+{{airline.name}} - {{flightNum}}<br/>
+{{#start}}<br/>
+{{countryName}} -  {{dateTime}}<br/>
+{{/start}}
+{{/dayminusone}}
+------------<br/><br/><br/>
+Day 
+{{#actualdate}}<br/>
+{{airline.name}} - {{flightNum}}<br/>
+{{#start}}<br/>
+{{countryName}} -  {{dateTime}}<br/>
+{{/start}}<br/>
+{{/actualdate}}
+------------<br/><br/><br/>
+Day +1
+{{#dayplusone}}<br/>
+{{airline.name}} - {{flightNum}}<br/>
+{{#start}}<br/>
+{{countryName}} -  {{dateTime}}<br/>
+{{/start}}<br/>
+{{/dayplusone}}
+------------<br/><br/><br/>
+Day +2
+{{#dayplustwo}}
+{{airline.name}} - {{flightNum}}<br/>
+{{#start}}<br/>
+{{countryName}} -  {{dateTime}}<br/>
+{{/start}}
+{{/dayplustwo}}
+
+
+{{/fdetails}}
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/client.js"></script>
+
+</body>
+</html>

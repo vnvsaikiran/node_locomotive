@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Form</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="header">
+<h2>Filight Search</h3>
+</div>
+
+  <form action="/flight-search">
+    <legend>Search Flights</legend><br/>
+    <input name="fromLocation" placeholder="From Location"><br/><br/>
+    <input name="toLocation" placeholder="To Location"><br/><br/>
+	<input name="dateofTravel" placeholder="Travelling Date"><br/><br/>
+    <input type="Submit">
+  </form>
+  <br>
+<table border=1>
+  <tr><td>Airline Name</td><td>Flight Number</td><td>Arrival</td><td>Departure</td></tr>  
+  {{#fdetails}}
+    <tr>
+	<td>{{airline.name}}</td>
+	<td>{{flightNum}}</td>
+	{{#start}}
+	<td>{{countryName}} - {{airportName}} - {{dateTime}}</td>
+    {{/start}}
+	{{#finish}}
+	<td>{{countryName}} - {{airportName}} - {{dateTime}}</td>
+	{{/finish}}
+	</tr>
+  {{/fdetails}}
+ </table>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/client.js"></script>
+
+</body>
+</html>

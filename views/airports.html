@@ -1,0 +1,23 @@
+<h1>Airports Search</h1>
+<script>
+function validate(){
+if(document.getElementById('airportname').value == ''){
+ alert('Please enter airportname');
+ return false;
+ }else {
+	return true;
+ }
+}
+</script>
+<form action="/airports" OnSubmit="return validate();">
+<input type="text" name="q" id="airportname"/>
+<input type="submit" name="submit" />
+</form>
+
+ 
+ <table border=1>
+ <tr><td>Airport Name</td><td>Country</td><td>Timezone</td></tr>
+ {{#aports}}
+ <tr><td>{{airportName}}</td><td>{{countryName}}</td><td>{{timeZone}}</td></tr> 
+{{/aports}} 
+</table>
